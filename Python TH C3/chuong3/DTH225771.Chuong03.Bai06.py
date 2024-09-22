@@ -1,0 +1,8 @@
+print("Y nghia cac toan tu:")
+print ("/: phep chia")
+print ("//: Thực hiện phép chia, tròng đó kết quả là những thương số  sau khi đã xóa các chữ số sau dấu phẩy")
+print ("%: phep chia lay phan du")
+print ("**: phep lay so mu")
+print ("and: Ket hop 2 bieu thuc logic")
+print ("or: Toan tu hoac trong Python")
+print("is: Kiem tra bien co bang hay khong")

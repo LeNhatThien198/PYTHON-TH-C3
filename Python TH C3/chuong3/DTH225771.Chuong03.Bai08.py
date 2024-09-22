@@ -1,0 +1,5 @@
+print("Các loại lỗi trong python:")
+print("Lỗi cú pháp được gọi là Syntax Error")
+print("Lỗi thực thi được gọi là Runtime Error")
+print("Lỗi đánh giá đây được xem là một lỗi Python đặc biệt có tên gọi là Assert Error")
+print("Cách xử lý lỗi trong python bằng lệnh try và except")
