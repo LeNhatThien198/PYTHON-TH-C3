@@ -1,9 +1,6 @@
-import math
-try:
-    r=float (input ("Mời bạn nhập bán kính hình tròn:"))
-    cv=2*math.pi*r
-    dt=math.pi*r**2
-    print("Chu vi = ",cv)
-    print("Diện tích=",dt)
-except:
-    print("Lỗi rồi!")
+print("Chương trình kiểm tra năm nhuần")
+year=int(input("Mời bạn nhập vào 1 năm: \n"))
+if(year % 4 ==0 and year % 100 !=0) or year %400 ==0:
+  print("Năm", year, "là năm nhuần")
+else:
+    print("Năm", year, "không nhuần")
