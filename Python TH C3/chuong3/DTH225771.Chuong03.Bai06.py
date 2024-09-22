@@ -1,8 +1,21 @@
-print("Y nghia cac toan tu:")
-print ("/: phep chia")
-print ("//: Thực hiện phép chia, tròng đó kết quả là những thương số  sau khi đã xóa các chữ số sau dấu phẩy")
-print ("%: phep chia lay phan du")
-print ("**: phep lay so mu")
-print ("and: Ket hop 2 bieu thuc logic")
-print ("or: Toan tu hoac trong Python")
-print("is: Kiem tra bien co bang hay khong")
+print("Chương trình đọc số ra dạng chữ")
+def doc_so(n):
+    hangdv = ["", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"]
+    hangchuc = ["", "mười", "hai mươi", "ba mươi", "bốn mươi", "năm mươi", "sáu mươi", "bảy mươi", "tám mươi", "chín mươi"]
+
+    if n < 10:
+        return hangdv[n]
+    else:
+        chuc = n // 10
+        dv = n % 10
+        if dv == 0:
+            return hangchuc[chuc]
+        else:
+            return hangchuc[chuc] + " " + hangdv[dv]
+
+n = int(input("Nhập một số có tối đa 2 chữ số: "))
+
+if n <= 0 or n > 99:
+    print("Vui lòng nhập một số có tối đa 2 chữ số.")
+else:
+    print("Cách đọc:", doc_so(n))
