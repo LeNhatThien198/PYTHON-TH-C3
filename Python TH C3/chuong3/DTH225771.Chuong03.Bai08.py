@@ -1,5 +1,23 @@
-print("Các loại lỗi trong python:")
-print("Lỗi cú pháp được gọi là Syntax Error")
-print("Lỗi thực thi được gọi là Runtime Error")
-print("Lỗi đánh giá đây được xem là một lỗi Python đặc biệt có tên gọi là Assert Error")
-print("Cách xử lý lỗi trong python bằng lệnh try và except")
+def tinh_toan(a, b, phep_toan):
+  if phep_toan == "+":
+    return a + b
+  elif phep_toan == "-":
+    return a - b
+  elif phep_toan == "*":
+    return a * b
+  elif phep_toan == "/":
+    if b!=0:
+      return a / b
+    else:
+      print("Lỗi: Không thể chia cho 0.")
+  else:
+    print("Phép toán không hợp lệ!")
+
+a=float(input("Nhập giá trị cho a: "))
+b=float(input("Nhập giá trị cho b: "))
+phep_toan=input("Nhập phép toán (+,-,*,/): ")
+
+ket_qua=tinh_toan(a, b, phep_toan)
+print("Kết quả: ",ket_qua)
+
+    
