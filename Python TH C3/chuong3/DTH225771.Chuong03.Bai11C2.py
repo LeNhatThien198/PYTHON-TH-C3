@@ -10,13 +10,14 @@ def kiem_tra_so_nguyen_to(n):
 def nhap_so_nguyen_duong():
     while True:
         try:
-            n = int(input("Nhập vào n nguyên dương: "))
+            n = (input("Nhập vào n nguyên dương: "))
+            n=int(n)
             if n > 0:
                 return n
             else:
                 print(n, "không phải là số nguyên dương! Vui lòng nhập lại.")
         except:
-            print("Không hợp lệ! Vui lòng nhập một số nguyên hợp lệ.")
+            print(n, "Không hợp lệ! Vui lòng nhập một số nguyên hợp lệ.")
 
 def hoi_tiep_tuc():
     while True:
@@ -39,5 +40,4 @@ def main():
             print("Tạm biệt người anh em!")
             break
 
-if __name__ == "__main__":
-    main()
+main()
