@@ -1,6 +1,6 @@
 count = 0
 for a in range(20, 100, 5):
-    print("*",end=' ')
+    print("*",end=" ")
     count+=1
 print("\nTổng dấu sao: {}".format(count))
 
