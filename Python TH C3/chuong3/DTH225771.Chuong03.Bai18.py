@@ -17,24 +17,18 @@ def ve_hinh_1_2(n):
             print("*", end=" ")
         print()
 
-def ve_hinh_3(n2):
-    for i in range(n2):
-        for j in range(i + 1):
-            if i == n - 1 or j == i:
-                if i == n - 1:
-                    print("* " * n2, end="")
-                    break
-                else:
-                    print("*", end=" ")
+def test(n3):
+    for i in range(n3):
+        if i == n3 // 2:
+            print("*"*n3)
+        else:
+            if i < n3 // 2 and i != 0:
+                print("*" + " " * (i-1) + "*")
+            elif i > n3 // 2 and i != n3 - 1:
+                print(" " * i + "*" + " " * (n3 - (i+2)) + "*")
             else:
-                print(" ", end=" ")
-           
-        print()
-
-
-ve_hinh_1_2(n)
-print()
-ve_hinh_3(n2)        
+                print(" " * i + "*")
+test(7)
         
 
 
