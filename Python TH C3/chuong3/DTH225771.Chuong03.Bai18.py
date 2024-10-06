@@ -1,7 +1,6 @@
-
-# Online Python - IDE, Editor, Compiler, Interpreter
 n=4
 n2=7
+
 def ve_hinh_1_2(n):
     for i in range(n):
         for j in range(n):
@@ -17,20 +16,21 @@ def ve_hinh_1_2(n):
             print("*", end=" ")
         print()
 
-def test(n3):
-    for i in range(n3):
-        if i == n3 // 2:
-            print("*"*n3)
+def ve_hinh_3(n2):
+    for i in range(n2):
+        if i == n2 // 2:
+            print("* "*n2)
         else:
-            if i < n3 // 2 and i != 0:
-                print("*" + " " * (i-1) + "*")
-            elif i > n3 // 2 and i != n3 - 1:
-                print(" " * i + "*" + " " * (n3 - (i+2)) + "*")
+            if i < n2 // 2 and i != 0:
+                print("* " + "  " * (i-1) + "*")
+            elif i > n2 // 2 and i != n2 - 1:
+                print(" " * i*2 + "*" + "  " * (n2 - (i+2)) + " *")
             else:
-                print(" " * i + "*")
-test(7)
+                print(" " * i*2 + "*")
+ve_hinh_1_2(n)
+print()
+ve_hinh_3(n2)
+
+
+
         
-
-
-
-
